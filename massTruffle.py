@@ -74,7 +74,7 @@ def main():
     return 0
 
 def run_trufflehog(repo):
-    print("Processing " + repo)
+    print("Processing " + repo, flush=True)
     os.system("trufflehog --cleanup " + repo + " > " + glob_output_directory + "/mh_" + repo.split('/')[-2] + "_" + repo.split('/')[-1])
 
 def get_org_members(var):
