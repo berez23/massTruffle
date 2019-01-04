@@ -1,5 +1,10 @@
 # osot-scripts
-Run trufflehog against targets in GitHub.
+
+Run trufflehog against targets in GitHub. You can specify the number of trufflehog processes to run concurrently.
+You can't specify an individual repo to scan, you must specify a user or an organisation. If you specify a user,
+all repos belonging to this user which you can access will be scanned with trufflehog. If you specify an
+organisation and use the ```--members``` flag, all repos for all members you can see of that organisation will
+be scanned (no repos belonging to the organisation will be scanned if the ```--members``` flag is provided).
 
 # Install
 
