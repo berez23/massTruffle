@@ -21,7 +21,8 @@ Run trufflehog against targets in GitHub.
 
 # Usage
 
-```usage: massTruffle.py [-h] [--org ORG] --pat PAT [--user USER]
+```
+usage: massTruffle.py [-h] [--org ORG] --pat PAT [--user USER]
                       [--processes PROCESSES]
                       [--output-directory OUTPUT_DIRECTORY] [--public]
                       [--private] [--all] [--members]
@@ -40,4 +41,5 @@ optional arguments:
   --public              Scan only public repos.
   --private             Scan only private repos.
   --all                 Scan all repos PAT can see.
-  --members             Scan only repos of members in an organisation.```
+  --members             Scan only repos of members in an organisation.
+```
