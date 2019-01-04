@@ -1,10 +1,16 @@
 # osot-scripts
 
-Run trufflehog against targets in GitHub. You can specify the number of trufflehog processes to run concurrently.
-You can't specify an individual repo to scan, you must specify a user or an organisation. If you specify a user,
-all repos belonging to this user which you can access will be scanned with trufflehog. If you specify an
-organisation and use the ```--members``` flag, all repos for all members you can see of that organisation will
-be scanned (no repos belonging to the organisation will be scanned if the ```--members``` flag is provided).
+Run trufflehog against targets in GitHub.
+
+1. You can specify the number of trufflehog processes to run concurrently.
+2. You can't specify an individual repo to scan, you must specify a user or an
+   organisation.
+3. If you specify a user, all repos belonging to this user which you can
+   access will be scanned with trufflehog.
+4. If you specify an organisation and use the ```--members``` flag, all repos
+   for all members you can see of that organisation will be scanned (no repos
+   belonging to the organisation will be scanned if the ```--members``` flag
+   is provided).
 
 # Install
 
@@ -56,8 +62,8 @@ optional arguments:
 
 ## What's a PAT (Personal Access Token)?
 
-You need to be authenticated to use the GitHub API (which is what PyGithub relies on).
-Get a PAT at https://github.com/settings/tokens
+You need to be authenticated to use the GitHub API (which is what PyGithub
+relies on). Get a PAT at https://github.com/settings/tokens
 
 ## Does this tool let me see private repos?
 
@@ -65,4 +71,5 @@ Only if you have access to them.
 
 ## Does this tool let me see members of an organisation?
 
-Only if this information is public or you are a member of the organisation.
+Only if this information is public or you are a member of the
+organisation.
