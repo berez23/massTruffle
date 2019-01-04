@@ -3,7 +3,10 @@ Run trufflehog against targets in GitHub.
 
 # Install
 
-```docker build . -t truffle```
+```
+git clone https://github.com/ministryofjustice/massTruffle
+docker build . -t truffle
+```
 
 # Run
 
