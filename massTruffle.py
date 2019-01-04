@@ -20,14 +20,14 @@ if in_docker():
     glob_output_directory = "/output"
 
 def main():
-    parser = argparse.ArgumentParser(description="Run trufflehog against" + 
+    parser = argparse.ArgumentParser(description="Run trufflehog against " + 
                                                  "targets in GitHub.")
     parser.add_argument("--org",
                         help="GitHub organisation.")
-    parser.add_argument("--user",
-                        help="GitHub user.")
     parser.add_argument("--pat", required=True,
                         help="GitHub PAT (Personal Access Token).")
+    parser.add_argument("--user",
+                        help="Scan repos of this GitHub user.")
     parser.add_argument("--processes", default=1, type=int,
                         help="Max Trufflehog processes at a time (default is 1).")
     parser.add_argument("--output-directory", default="/tmp",
@@ -39,7 +39,7 @@ def main():
     parser.add_argument("--all", action="store_const", const="all",
                         dest="view", help="Scan all repos PAT can see.")
     parser.add_argument("--members", action="store_true",
-                        dest="members", help="Scan only repos of members in organisation.")
+                        dest="members", help="Scan only repos of members in an organisation.")
 
     parsed = parser.parse_args()
 
