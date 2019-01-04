@@ -1,4 +1,4 @@
-# osot-scripts
+# massTruffle
 
 Run trufflehog against targets in GitHub.
 
