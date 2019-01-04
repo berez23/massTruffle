@@ -46,3 +46,18 @@ optional arguments:
   --all                 Scan all repos PAT can see.
   --members             Scan only repos of members in an organisation.
 ```
+
+# Help
+
+## What's a PAT (Personal Access Token)?
+
+You need to be authenticated to use the GitHub API (which is what PyGithub relies on).
+Get a PAT at https://github.com/settings/tokens
+
+## Does this tool let me see private repos?
+
+Only if you have access to them.
+
+## Does this tool let me see members of an organisation?
+
+Only if this information is public or you are a member of the organisation.
